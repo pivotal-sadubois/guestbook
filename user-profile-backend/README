@@ -1,0 +1,5 @@
+
+Angular + Spring Boot REST API Example Tutorial
+https://www.javaguides.net/2021/01/angular-spring-boot-rest-api-example.html
+
+./mvnw spring-boot:run -Dserver.port=8090
