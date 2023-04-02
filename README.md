@@ -1,3 +1,71 @@
+# Guestbook - Demo Application for Tanzu Applicaiton Platform (TAP)
+This Project has been designed as a demo application for the Tanzu Applicaiton Platform (TAP). The Demo currently only 
+implements the User Profile Management as part of the Guestbook application and is basing on a
+the user-profile-database, user-profile-backend and the user-profile-ui. 
+
+## Applicaiton Components
+Applicaiton Components
+- user-profile-database - PostgrSQL Database backend as persistent storage for the user profiles.
+- user-profile-backend - Is a spring boot REST API service and acts as a backend for the User Profile Management Service
+- user-profile-ui - Is an AngularJS Frontent for the Guestbook User Profile Management and interacts directly with the user-profile-backend
+
+
+## Fork the guestbook Git Repository 
+Open the pivotal-sadubois/guestbook repository and add '/fork' in the brwoser URL like that: 
+=> https://github.com/pivotal-sadubois/guestbook/fork
+- Select an Owner (specifiy your GitHub account)
+- Select 'Copy the main branch only'
+- press 'Create fork'
+
+## Clone the Git Repsitory to your local laptop/workstation
+By cloning the GIT repository with the Github API Key, allows to make 'git pull' without asking for a password. The GITHUB_HOME can be adjusted as needed if $HOME/Development is not your development folder.
+```
+export GITHUB_APIKEY=<your-github-user>
+export GITHUB_USER=<github-api-key>
+export GITHUB_HOME=$HOME/Development
+
+git -C $GITHUB_HOME clone https://$GITHUB_APIKEY@github.com/$GITHUB_USER/guestbook.git
+```
+
+## Visual Studio Code (VScode) Setup
+
+git -C /tmp clone https://github.com/pivotal-sadubois/$APPNAME.git
+
+# --- CREATE DEVELOPER NAMESPACE ---
+cd $HOME/tanzu-demo-hub/scripts && ./tap-create-developer-namespace.sh $NAMESPACE 
+
+# --- SETUP POSGRESS DB ---
+kubectl delete secret regsecret -n $NAMESPACE > /dev/null 2>&1
+kubectl create secret --namespace=$NAMESPACE docker-registry regsecret \
+   --docker-server=https://registry.tanzu.vmware.com \
+   --docker-username=$TDH_REGISTRY_VMWARE_USER \
+   --docker-password=$TDH_REGISTRY_VMWARE_PASS
+
+cd /tmp/$APPNAME/user-profile-database
+kubectl -n $APPNAME create -f postgres-service-binding.yaml 2> /dev/null
+kubectl -n $APPNAME create -f postgres-class.yaml 2> /dev/null
+kubectl -n $APPNAME create -f postgres.yaml 
+
+
+# VSCode Import TAP Settings 
+vscode-settings-guestbook.json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ---------------------
+
 # Introduction blockchain-api
 blockchain-api provides you an out-of-the-box application setup to implement your business logic. It is based on the
 commonly known 3-layered application architecture in where the package `api` provides the presentation layer, `domain` provides 
