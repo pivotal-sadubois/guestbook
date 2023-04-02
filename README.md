@@ -9,10 +9,10 @@ Applicaiton Components
 - user-profile-backend - Is a spring boot REST API service and acts as a backend for the User Profile Management Service
 - user-profile-ui - Is an AngularJS Frontent for the Guestbook User Profile Management and interacts directly with the user-profile-backend
 
-
-## Fork the guestbook Git Repository 
-Open the pivotal-sadubois/guestbook repository and add '/fork' in the brwoser URL like that: 
-=> https://github.com/pivotal-sadubois/guestbook/fork
+## Setup Development Environment
+### Fork the guestbook Git Repository 
+By creating a fork of the original GIT Repository allows you to edit the content in your GitHub environment without doing pull requests on the original repsitory.
+- Navigate to https://github.com/pivotal-sadubois/guestbook/fork in your browser
 - Select an Owner (specifiy your GitHub account)
 - Select 'Copy the main branch only'
 - press 'Create fork'
