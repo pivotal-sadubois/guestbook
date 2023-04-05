@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: user-profile-database-0
+  namespace: guestbook
+  description: VMware Tanzu SQL with Postgres database for storing orders
+  annotations:
+    'backstage.io/techdocs-ref': dir:../
+spec:
+  type: database
+  owner: java-spring-team
+  system: user-profile

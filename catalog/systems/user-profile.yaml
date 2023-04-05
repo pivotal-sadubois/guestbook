@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: user-profile
+  namespace: guestbook
+  description: Guestbook System
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: java-spring-team
+  domain: guestbook
