@@ -16,5 +16,6 @@ spec:
   lifecycle: experimental
   owner: java-spring-team
   system: user-profile
+  domain: guestbook
   providesApis:
     - blockchain-api-contour.e2e.corby.cc
