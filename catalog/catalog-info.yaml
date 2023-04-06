@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
   name: guestbook
-  namespace: guestbook
+  #namespace: guestbook
   description: Guestbook Application Demo 
   annotations:
     'backstage.io/techdocs-ref': dir:.
