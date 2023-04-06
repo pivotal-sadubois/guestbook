@@ -32,18 +32,6 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: sdubois
-  namespace: guestbook
-spec:
-  profile:
-    displayName: Sacha Dubois
-    email: sdubois@vmware.com
-    picture: "https://secure.gravatar.com/avatar/b40de695b3a53ccf3ab2ca398a504566?s=64"
-  memberOf: [angular-js-team]
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
   name: nitashav
   namespace: guestbook
 spec:

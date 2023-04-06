@@ -20,18 +20,6 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: cdelashmutt
-  namespace: guestbook
-spec:
-  profile:
-    displayName: Chris DeLashmutt
-    email: cdelashmutt@vmware.com
-    picture: "https://www.gravatar.com/avatar/8b3c258bf02ddf159a968d6b61f57d69"
-  memberOf: [java-spring-team]
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
   name: sdubois
   namespace: guestbook
 spec:
@@ -44,11 +32,11 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: nitashav
+  name: sschmidt
   namespace: guestbook
 spec:
   profile:
-    displayName: Nitasha Verma
-    email: nitashav@vmware.com
-    picture: "https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff"
+    displayName: Stefan (Steve) Schmidt
+    email: sschmidt@vmware.com
+    picture: "https://media.licdn.com/dms/image/C5103AQGEo1RqkfAtXw/profile-displayphoto-shrink_100_100/0/1516979507749?e=1686182400&v=beta&t=Xdhmp1_yjFlIRrBtqJtAoq4yWH_KA7vZuuRVD1MJP7w"
   memberOf: [java-spring-team]
