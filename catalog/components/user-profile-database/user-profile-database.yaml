@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: user-profile-backend
+  name: user-profile-database
   annotations:
     'backstage.io/kubernetes-namespace': guestbook
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=guestbook"
