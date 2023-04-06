@@ -2,8 +2,9 @@ site_name: 'Guestbook API Docs'
 
 nav:
   - Guestbook Application: index.md
-  - Deploy on Workstation: deploy_local.md
-  - Deploy with TAP: deploy_tap.md
+  - Setup Developer Environment: developer_env.md
+  - Deploy on local Workstation: deploy_local.md
+  - Deploy on Kubernetes with TAP: deploy_tap.md
 
 plugins:
   - techdocs-core
