@@ -4,8 +4,6 @@ metadata:
   name: user-profile-api
   description: This API create and receives customer profiles
   annotations:
-    # https://backstage.io/docs/features/kubernetes/configuration/
-    #'backstage.io/kubernetes-namespace': guestbook
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=guestbook"
     'backstage.io/techdocs-ref': dir:.
   links:
