@@ -4,7 +4,8 @@ metadata:
   name: user-profile-database-0
   description: VMware Tanzu SQL with Postgres database for storing orders
   annotations:
-    'backstage.io/kubernetes-namespace': guestbook
+    # https://backstage.io/docs/features/kubernetes/configuration/
+    #'backstage.io/kubernetes-namespace': guestbook
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=guestbook"
     'backstage.io/techdocs-ref': dir:../
 spec:
