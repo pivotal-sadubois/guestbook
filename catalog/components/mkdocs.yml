@@ -1,7 +1,7 @@
 site_name: 'Blockchain Component Docs'
 
 nav:
-  - Overview: index.md
+  - Overview Component: index.md
 
 plugins:
   - techdocs-core
