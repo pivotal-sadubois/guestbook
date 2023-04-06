@@ -2,7 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: java-spring-team
-  #namespace: guestbook
   description: Guestbook Java/Spring Team
   links:
     - url: "https://vmware.slack.com/archives/C03V4CG0FT8"
@@ -21,7 +20,6 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: sdubois
-  #namespace: guestbook
 spec:
   profile:
     displayName: Sacha Dubois
@@ -33,7 +31,6 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: sschmidt
-  #namespace: guestbook
 spec:
   profile:
     displayName: Stefan (Steve) Schmidt

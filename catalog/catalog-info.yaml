@@ -2,15 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
   name: guestbook
-  #namespace: guestbook
   description: Guestbook Application Demo 
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
   targets:
-    - ./components/user-profile-ui.yaml
-    - ./components/user-profile-backend.yaml
-    - ./resources/user-profile-database.yaml
+    - ./components/user-profile-ui/user-profile-ui.yaml
+    - ./components/user-profile-backend/user-profile-backend.yaml
+    - ./components/user-profile-database/user-profile-database.yaml
+    - ./resources/user-profile-database/user-profile-database.yaml
     - ./groups/java-spring-team.yaml
     - ./groups/angular-js-team.yaml
     - ./systems/user-profile.yaml

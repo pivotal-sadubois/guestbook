@@ -5,6 +5,8 @@ metadata:
   namespace: guestbook
   description: Guestbook System
   annotations:
+    'backstage.io/kubernetes-namespace': guestbook
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=guestbook"
     'backstage.io/techdocs-ref': dir:.
 spec:
   owner: java-spring-team

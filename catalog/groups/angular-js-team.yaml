@@ -2,7 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: angular-js-team
-  #namespace: guestbook
   description: Guestbook AngularJS Team
   links:
     - url: "https://vmware.slack.com/archives/C03V4CG0FT8"
@@ -21,7 +20,6 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: cdelashmutt
-  #namespace: guestbook
 spec:
   profile:
     displayName: Chris DeLashmutt
@@ -33,7 +31,6 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: nitashav
-  #namespace: guestbook
 spec:
   profile:
     displayName: Nitasha Verma

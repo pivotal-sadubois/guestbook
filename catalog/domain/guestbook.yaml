@@ -2,9 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
   name: guestbook
-  namespace: guestbook
   description: Guestbook Application Demo
   annotations:
+    'backstage.io/kubernetes-namespace': guestbook
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=guestbook"
     'backstage.io/techdocs-ref': dir:.
 #  links:
 #    - url: http://example.com/domain/cloud-apps/
@@ -14,3 +15,4 @@ metadata:
 #       icon: dashboard
 spec:
   owner: java-spring-team
+  system: user-profile

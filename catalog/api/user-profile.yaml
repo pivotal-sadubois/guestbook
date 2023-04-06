@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: user-profiles
-  namespace: guestbook
+  name: user-profile
   description: This API create and receives customer profiles
   annotations:
+    'backstage.io/kubernetes-namespace': guestbook
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=guestbook"
     'backstage.io/techdocs-ref': dir:.
   links:
@@ -15,8 +15,8 @@ spec:
   type: openapi
   lifecycle: experimental
   owner: java-spring-team
-  system: guestbook/user-profile
-  domain: guestbook/guestbook
+  system: user-profile
+  domain: guestbook
   definition: |
     openapi: "3.0.0"
     info:
