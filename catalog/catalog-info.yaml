@@ -10,7 +10,6 @@ spec:
   targets:
     - ./components/user-profile-ui.yaml
     - ./components/user-profile-backend.yaml
-    - ./components/user-profile-backend-dev.yaml
     - ./resources/user-profile-database.yaml
     - ./groups/java-spring-team.yaml
     - ./groups/angular-js-team.yaml
