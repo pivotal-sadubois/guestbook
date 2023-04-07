@@ -1,10 +1,10 @@
-# Guestbook - Demo Application for Tanzu Applicaiton Platform (TAP)
+# Newsletter - Demo Application for Tanzu Applicaiton Platform (TAP)
 This Project has been designed as a demo application for the Tanzu Applicaiton Platform (TAP). The Demo currently only
 implements the User Profile Management as part of the Guestbook application and is basing on a
 the guestbook-user-db, guestbook-user-svc and the guestbook-ui.
 
 The picture below shows the architecture of the Guestbook Application:
-![guestbook-architecture](images/guestbook.jpg)
+![guestbook-architecture](images/newsletter.jpg)
 
 ## Applicaiton Components
 Applicaiton Components
