@@ -1,10 +1,10 @@
-site_name: 'Guestbook API Docs'
+site_name: 'Newsletter Application Docs'
 
 nav:
-  - Guestbook Application: index.md
-  - Setup Developer Environment: developer_env.md
+  - Application: Architecture index.md
+  - Developer Environment: developer_env.md
   - Deploy on local Workstation: deploy_local.md
-  - Deploy on Kubernetes with TAP: deploy_tap.md
+  - Deploy on Kubernetes with Tanzu Application Platform (TAP): deploy_tap.md
 
 plugins:
   - techdocs-core
