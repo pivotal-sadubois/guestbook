@@ -1,16 +1,21 @@
-# Newsletter Applicaiton
-This Project has been designed as a demo application for the Tanzu Applicaiton Platform (TAP). The Demo currently only
+# Newsletter Application This Project has been designed as a demo application for the Tanzu Applicaiton Platform (TAP). The Demo currently only
 implements the User Profile Management as part of the Guestbook application and is basing on a
 the guestbook-user-db, guestbook-user-svc and the guestbook-ui.
 
 The picture below shows the architecture of the Newsletter Application:
 ![guestbook-architecture](images/newsletter.jpg)
 
+### Applicaiton Components
+- Newsletter User Interface (newsletter-ui)
+- Newsletter User Service (newsletter-user-service)
+- Newsletter User Database (newsletter-user-db)
+- Newsletter Sailing Service (newsletter-mailing-service)
+
 Applicaiton Components
-- newsletter-ui - Is an AngularJS Frontent for the Guestbook User Profile Management and interacts directly with the user-profile-backend
-- user-service - Is a spring boot REST API service and acts as a backend for the User Profile Management Service
-- user-db - PostgrSQL Database backend as persistent storage for the user profiles.
-- mailing-service - The mailing-service is responsible for sending the newsletter to the recipients provided by the user-service app
+- Newsletter User Interface (newsletter-ui)
+- Newsletter User Service (newsletter-user-service)
+- Newsletter User Database (newsletter-user-db)
+- Newsletter Mailing Service (newsletter-mailing-service)
 
 ## Newsletter User Interface (newsletter-ui)
 The Newsletter User Interface is a Web Frontent basing on AngularJS that allows user to signup to the Newsletter. The Interface allows users to 
@@ -25,12 +30,16 @@ by introducting a new API Version. As well its planned to integrate a circuit br
 the service from overloading.
 
 ## Newsletter User Database (newsletter-user-db)
-Tje Newsletter User Database acts as backend for the Newsletter User Service and is basing on a PostgreSQL Database running in a container with 
+The Newsletter User Database acts as backend for the Newsletter User Service and is basing on a PostgreSQL Database running in a container with 
 the same Kubernetes Namespace as the application. The Database is deployed and Managed trough the PostgreSQL Operator running in the default namespace
 of the same cluster. Morge information about the VMware PostgreSQL Operator can be seen in the documentation 
 [VMware SQL with Postgres for Kubernetes Operator](https://docs.vmware.com/en/VMware-SQL-with-Postgres-for-Kubernetes/2.0/vmware-postgres-k8s/GUID-install-operator.html).
 
-## Newsletter Sailing Service (newsletter-mailing-service)
+## Newsletter Mailing Service (newsletter-mailing-service)
+the Newsletter Mailing Service is a Phyton based application started by the Newsletter Administrator to generation a mass mailing based on the Newsletter 
+registered users provided by the Newsletter User Service API. The Newsletter Mailing Service processes the provided Newsletter template and complement it 
+with the users salutation, email address and unsuscribe-url basing on the registered user-id. Thous malings will then be sent to the configured external 
+Mail Service Provided via SMTP.
 
 Deployment Scenarios
 The Guestbook application can be deployed local on a Workstation / Laptop which usually the first choise of a developer with the limitation
